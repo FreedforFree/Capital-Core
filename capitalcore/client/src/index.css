@@ -21,7 +21,7 @@ h2.navbar-logo {
     position: absolute;
     top: 0;
     left: 0;
-    font-size: 16px;
+    font-size: 4vw;
     margin-top: 45px;
     font-weight: 100;
     z-index: 1;
@@ -31,7 +31,7 @@ h2.navbar-signin {
     position: absolute;
     top: 0;
     right:0;
-    font-size: 16px;
+    font-size: 4vw;
     margin-top: 45px;
     font-weight: 100;
     z-index: 2;
@@ -41,8 +41,13 @@ nav {
     padding-top: 35px;
     display: flex;
     flex-direction: column;
-    gap:12px;
+    gap:2vw;
     height: max-content;
+}
+h4 {
+    text-align: center;
+    margin: 0px;
+    font-weight: 400;
 }
 .navbar-stripes {
     width: 100%;
@@ -55,21 +60,21 @@ nav {
 }
 h1 {
     font-weight: 500;
-    font-size: 42px;
+    font-size: 40px;
     margin-left: 10px;
-    margin-top: 60px;
+    margin-top: calc(2vh + 2vw);
+    margin-bottom: -20px;
 }
 .yellow-container {
-    position: absolute;
-    left: -50px;
-    top: 180px;
-    width: 400px;
+    margin-left: -50px;
+    width: 100vw;
     height: 101px;
     background-color: #FFD700;
     border-radius: 40px;
     z-index: -1;
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 .hero-subtitle {
     font-family: 'Karla';
@@ -82,13 +87,21 @@ h1 {
     letter-spacing: 0.05em;
     padding-left: 70px;
     color: #022C43;
+
+    
+/* Signup Process Section */
+}.process-step-container {
+    display: flex;
+    width: 100%;
+    height: max-content;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
 }
 .signup-container {
-    position: absolute;
-    width: 342px;
-    height: 280.62px;
-    left: 26px;
-    top: 320px;
+    width: 90vw;
+    height: calc(200.62px + 24vw);
     background: #FFFFFF;
     border-radius: 40px;
     display: flex;
@@ -97,11 +110,18 @@ h1 {
     align-items: center;
 }
 .tolerance-container {
-    position: absolute;
-    width: 342px;
-    height: 280.62px;
-    left: 26px;
-    top: 723.34px;
+    width: 90vw;
+    height: calc(200.62px + 24vw);
+    background: #FFFFFF;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.portfolio-container {
+    width: 90vw;
+    height: calc(200.62px + 24vw);
     background: #FFFFFF;
     border-radius: 40px;
     display: flex;
@@ -111,18 +131,19 @@ h1 {
 }
 .signup-container-form {
     margin-top: 10px;
-    width: 301px;
-    height: 211px;
+    width: 90%;
+    height: 70%;
     background: rgba(17, 81, 115, 0.83);
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.31);
     border-radius: 40px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 .process-step-text1 {
     width: 100%;
-    font-size: 16px;
-    margin: 0px;
+    font-size: calc(16px + 2vw);
+    margin-top: -2px;
     height: 26.31px;
     color: black;
     text-align: center;
@@ -132,36 +153,147 @@ h1 {
     text-align: center;
     padding: 30px;
     margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
 }
 .email-input {
     border: none;
-    width: 235px;
-    height: 34px;
-    margin-bottom: 25px;
+    width: 97%;
+    height: 22%;
+    margin-bottom: 10px;
     text-align: center;
+    margin-bottom: 5%;
 }
 .password-input {
     border: none;
-    width: 235px;
-    height: 34px;
+    width: 97%;
+    height: 22%;
     text-align: center;
 }
 .password-input, .email-input:focus {
     outline: none;
 }
 button.signup-form-button {
-    width: 107.42px;
+    width: 40%;
     border: none;
-    height: 36.17px;
+    height: 30%;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
     background: #FFD700;
     border-radius: 40px;
     margin-top: 25px;
-    margin-left: 130px;
     font-family: Bodoni;
+    margin-right: -58%;
 }
 button.signup-form-button:active {
     background: #e2c000;
 }
-@media screen and (min-width: 433px) {
+h3.process-step-text2 {
+    width: 100%;
+    font-size: calc(16px + 2vw);
+    margin-top: -2px;
+    height: 26.31px;
+    color: black;
+    text-align: center;
+    font-weight: 500;
+}
+.tolerance-container-shadow {
+    margin-top: 10px;
+    width: 90%;
+    height: 70%;
+    background: rgba(17, 81, 115, 0.83);
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.31);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+}
+.tolerance-level1 {
+    flex-direction: column;
+    width: 90%;
+    height: 20%;
+    background-color: #115173;
+    text-align: center;
+    border-radius: 10px;
+    font-family: Karla;
+    display: flex;
+    justify-content: center;
+}
+.tolerance-level2 {
+    flex-direction: column;
+    width: 90%;
+    height: 20%;
+    background-color: #FFD700;
+    text-align: center;
+    border-radius: 10px;
+    color: black;
+    font-family: Karla;
+    display: flex;
+    justify-content: center;
+}
+.tolerance-level3 {
+    flex-direction: column;
+    width: 90%;
+    height: 20%;
+    background-color: #022C43;
+    text-align: center;
+    border-radius: 10px;
+    font-family: Karla;
+    display: flex;
+    justify-content: center;
+}
+.portfolio-container-shadow {
+    margin-top: 10px;
+    width: 90%;
+    height: 70%;
+    background: rgba(17, 81, 115, 0.83);
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.31);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+}
+h3.process-step-text3 {
+    width: 100%;
+    font-size: calc(16px + 2vw);
+    margin-top: -2px;
+    height: 26.31px;
+    color: black;
+    text-align: center;
+    font-weight: 500;
+}
+.portfolio-graphic-image {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 90%;
+    width: auto;
+    height: auto;
+}
+
+/* Info and Signup */
+.info-signup-container {
+    margin-top: 7vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+p.info-text {
+    font-size: calc(10px + 2vw);
+    text-align: center;
+    font-weight: 100;
+    line-height: 4vh;
+    width: 80%;
+}
+.info-background {
+    background-color: #115173;
+    width: 100vw;
+    height: 32vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

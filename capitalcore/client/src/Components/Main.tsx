@@ -17,7 +17,7 @@ export default function Main() {
         console.log(email, password)
     }
     return(
-        <section>
+        <section className="process-step-container">
             <div className="signup-container">
                 <h3 className="process-step-text1">1. Create free Account</h3>
                 <div className="signup-container-form">
@@ -32,6 +32,17 @@ export default function Main() {
             </div>
             <div className="tolerance-container">
                 <h3 className="process-step-text2">2. Select Risk Tolerance</h3>
+                <div className="tolerance-container-shadow">
+                    <div className="tolerance-level1"><h4>Low Risk</h4></div>
+                    <div className="tolerance-level2"><h4>Average Risk</h4></div>
+                    <div className="tolerance-level3"><h4>High Risk</h4></div>
+                </div>
+            </div>
+            <div className="portfolio-container">
+                <h3 className="process-step-text3">3. Receive Optimized Portfolio</h3>
+                <div className="portfolio-container-shadow">
+                    <img className="portfolio-graphic-image" src="./resources/portfolio graphic.png" alt="Portfolio Graphic" />
+                </div>
             </div>
         </section>
     )
