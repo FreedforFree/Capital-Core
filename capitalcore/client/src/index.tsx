@@ -5,6 +5,7 @@ import Header from "./Components/Header.tsx";
 import Hero from "./Components/Hero.tsx";
 import Main from "./Components/Main.tsx";
 import Info from "./Components/Info.tsx";
+import PortfolioPreview from "./Components/PortfolioPreview.tsx";
 
 class App extends React.Component{
     render() {
@@ -16,6 +17,7 @@ class App extends React.Component{
                 </main>
                 <Main />
                 <Info />
+                <PortfolioPreview />
             </React.StrictMode>
         )
     }

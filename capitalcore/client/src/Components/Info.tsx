@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Info() {
+export default function Info() {   
     return(
         <section className="info-signup-container">
             <div className="info-background">
